@@ -1,18 +1,22 @@
-#Curso git para Iniciante
+# Curso git para Iniciante
 Udemy
 
 Principais comandos do git:
-    * git init : iniciar serviço do git na pasta
-    * git log : mostra todo commit realizado
-    * git diff: mostra toda modificação que foi realiza no projeto e certificar que está tudo ok
-    * git log --graph : mostra historio de cada commit e como foi dividido pelos branches
 
-    * git status: verifica os status dos artigos;
-    * git add "nome do arquivo": adiciona os arquivos para ser adicionado
-    * git commit -am "mensagem": "-a" para mandar direto e "m" para deixar uma mensgem;
-    * git remote add origin https://github.com/maurolima92/Sala-de-Estudo.git 
-    * git branch -M main (apenas a primeira vez)
-    * git push -u origin "main/master" (utilizar apena um dentro das aspas, precisa verifica qual branch seu bash está utilizando)
+1. **git init** : iniciar serviço do git na pasta
+    
+2. **git log** : mostra todo commit realizado
+
+3. **git diff**: mostra toda modificação que foi realiza no projeto e certificar que está tudo ok
+
+4. **git log --graph** : mostra historio de cada commit e como foi dividido pelos branches
+
+5. **git status** : verifica os status dos artigos;
+6. ** git add "nome do arquivo"**: adiciona os arquivos para ser adicionado
+7. **git commit -am "mensagem"** : "-a" para mandar direto e "m" para deixar uma mensgem;
+8. **git remote add origin https** : //github.com/maurolima92/Sala-de-Estudo.git 
+9. **git branch -M main** (apenas a primeira vez)
+10. **git push -u origin "main/master"** (utilizar apena um dentro das aspas, precisa verifica qual branch seu bash está utilizando)
 
 Fez cagada manito? Cuidadooooo com Reset
     * git checkout "nome do arquivo" : vai retornar o arquivo para antes da alteração e antes do git add "nome do arquivo"
