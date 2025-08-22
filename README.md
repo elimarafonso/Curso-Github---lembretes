@@ -25,6 +25,7 @@ Udemy
         10. git checkout branch_name : mudar de branch
         
         11. git checkout -b my_branch: cria a branch e já acessa a branh
+       
         12. git push --set-upstrem origin my_branch: **enviando a branch para o github**
      
         13. git push -u origin "main/master" (utilizar apena um dentro das aspas, precisa verifica qual branch seu bash está utilizando)
