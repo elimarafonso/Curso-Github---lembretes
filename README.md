@@ -12,7 +12,7 @@ Principais comandos do git:
 4. **git log --graph** : mostra historio de cada commit e como foi dividido pelos branches
 
 5. **git status** : verifica os status dos artigos;
-6. ** git add "nome do arquivo"**: adiciona os arquivos para ser adicionado
+6. **git add "nome do arquivo"**: adiciona os arquivos para ser adicionado
 7. **git commit -am "mensagem"** : "-a" para mandar direto e "m" para deixar uma mensgem;
 8. **git remote add origin https** : //github.com/maurolima92/Sala-de-Estudo.git 
 9. **git branch -M main** (apenas a primeira vez)
