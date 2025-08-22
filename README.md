@@ -18,19 +18,19 @@ Principais comandos do git:
 9. **git branch -M main** (apenas a primeira vez)
 10. **git push -u origin "main/master"** (utilizar apena um dentro das aspas, precisa verifica qual branch seu bash está utilizando)
 
-Fez cagada manito? Cuidadooooo com Reset
-    * git checkout "nome do arquivo" : vai retornar o arquivo para antes da alteração e antes do git add "nome do arquivo"
-    * git reset HEAD "nome do arquivo" : remover da fila do stage feito pelo git add "nome do arquivo"
+# Fez cagada manito? Cuidadooooo com Reset
+    **git checkout "nome do arquivo"** : vai retornar o arquivo para antes da alteração e antes do git add "nome do arquivo"
+    **git reset HEAD "nome do arquivo"** : remover da fila do stage feito pelo git add "nome do arquivo"
 
-    Git reset:
-        * --soft : matar o commit e retomar para o stage prontinho para commitar novamente
-        * --mixed : matar o commit e retomar para o stage modified
-        * --hard : matar todos os commits já feito e retomar o arquivo antes do primeiro commit
+   # **Git reset**:
+        **--soft** : matar o commit e retomar para o stage prontinho para commitar novamente
+        **--mixed** : matar o commit e retomar para o stage modified
+        **--hard** : matar todos os commits já feito e retomar o arquivo antes do primeiro commit
 
-Clonando pasta de repositorios
-    * git clone git@github.com:maurolima92/Sala-de-Estudo.git "nome da pasta"
+# Clonando pasta de repositorios
+    **git clone git@github.com:maurolima92/Sala-de-Estudo.git "nome da pasta"**
 
-Criando chave SSH - Git e Github para Iniciantes
+# Criando chave SSH - Git e Github para Iniciantes
     Url de apoio: https://hcode.com.br/blog/adicionando-uma-chave-ssh-ao-github
 
     * Abrir bash comand
@@ -39,35 +39,35 @@ Criando chave SSH - Git e Github para Iniciantes
     * No password ou passphrase aperar enter novamente para não colocar senha
 
     Para vincular a chave ssh ao git hub:
-    * cd ~/.ssh : ir para raiz do diretorio
-    * Precisamos colcoar no github o id_rsa.pub para isso digitar:
+    **cd ~/.ssh : ir para raiz do diretorio**
+    **Precisamos colcoar no github o id_rsa.pub para isso digitar**:
         * cat id_rsa.pub
-    * Copiar a chave todo código "id_rsa.pub" e abrir o navegado o github
+    **Copiar a chave todo código "id_rsa.pub" e abrir o navegado o github**
 
-    Vinculando a chave ssh no Github:
+# Vinculando a chave ssh no Github:
     * Clicar na foto de perfil e ir em settings
     * Clicar no menu lateral SSH and GPS Keys
     * Clicar no botão New SSH Keys
     * Cola o código que copiamos do arquivo id_rsa.pub e nomeamos o Title para referenciar
     o pc que está sendo configurado
 
-Fork
+# Fork
     Objetivo é criar uma cópia do outro projeto para trabalhar simutaneamente e depois mandar
     as motificações para o usuário titular do projeto ou da organizaçaõ.
 
-Ramificação, Merges e Rebases (branch)
+# Ramificação, Merges e Rebases (branch)
     Principais comando dos branch
-        * git checkout -b "nome do branch" : para criar um novo branch
-        * git branch : mostra todos os branch e destaca o branch que você está neste momento
-        * git checkout "nome do branch" : para mudar de branch
-        * git branch -D "nome do branch" : para excluir um branch
+        **git checkout -b "nome do branch"** : para criar um novo branch
+        **git branch** : mostra todos os branch e destaca o branch que você está neste momento
+        **git checkout "nome do branch"** : para mudar de branch
+        **git branch -D "nome do branch"** : para excluir um branch
 
-    Fazendo Merge e Rebase (Unir Branches)
+# Fazendo Merge e Rebase (Unir Branches)
 
     Diferença é que o merge cria um commit para unir os branchs e o rebase uni os branch sem criar um novo commit,
     porém o rebase perde a ordem cronologica das ações, mas ganha um hitórico linear.
 
-    Exemplo merge
+  #  Exemplo merge
         * Criar um arquivo no branch main e fazer um git commit
         * Criar um "novo branch" e criar um outro arquivo e fazer um git commit
         * Voltar ao branch main e criar um novo arquivo e fazer um git commit
@@ -76,12 +76,12 @@ Ramificação, Merges e Rebases (branch)
         * Fazer um git log para acompanhar todos os commits mesclados com historio linear
         * Fazer um git log --graph
 
-    MERGE - No branch main:
+   # MERGE - No branch main:
         * git merge "nome do branch"
         * Vais ser criado um novo commit para adicionar o o branch do merge acima
         git log --graph
 
-    Exemplo Rebase
+   # Exemplo Rebase
         * Criar um arquivo no branch main e fazer um git commit
         * Criar um "novo branch" e criar um outro arquivo e fazer um git commit
         * Voltar ao branch main e criar um novo arquivo e fazer um git commit
@@ -90,7 +90,7 @@ Ramificação, Merges e Rebases (branch)
         * Fazer um git log para acompanhar todos os commits mesclados com historio linear
         * Fazer um git log --graph
     
-    REBASE - No branch main
+  #  REBASE - No branch main
         * gir rebase "nome do branch"
         * Os branches vão ser alocados junto ao main de forma sequencial ao invés de mostrar as ramificações
         criadas, perdendo o historio linear do que foi feito.
@@ -98,7 +98,7 @@ Ramificação, Merges e Rebases (branch)
 
 Extras: Git Ignore, Git Stash, Alias, Versionamento de tags e Git Revert
 
-    Git Ignore: 
+   # Git Ignore: 
         gitignore é um arquivo que criamos na raiz do nosso projeto para poder ignorar arquivos e pastas do
         versionamento. Dentro do ".gitignore" colocamos todos os arquivos e pastas para serem ignorados pelo git.
 
@@ -109,7 +109,7 @@ Extras: Git Ignore, Git Stash, Alias, Versionamento de tags e Git Revert
         #Ajuda - Repositorios de varias aplicações mostrando quais arquivos precisam ser ignorados em cada uma
         https://github.com/github/gitignore
 
-    Git Stash
+# Git Stash
         git stash arquiva (ou faz o stash) de alterações que você fez na cópia de trabalho durante um
         determinado período, para que você possa trabalhar em outra coisa, depois voltar e fazer a reaplicação 
         mais tarde.
@@ -119,21 +119,22 @@ Extras: Git Ignore, Git Stash, Alias, Versionamento de tags e Git Revert
         * git stash list
         * git stash clear
 
-    Alias
+#  Alias
         Feito para encurtar comando, você configura um alias e utiliza quando precisar
 
         * git config --global alias.s status : quando digitar "git s" o git vai reconhecer meu alias e 
         executará o comando git status 
 
-    Versionamento com tags
+ 
+#   Versionamento com tags
         git tag é em geral usado para capturar um ponto no histórico que é usado para uma versão marcada 
         (por exemplo, v1. 0.1). Um marcador é como uma ramificação que não muda. Diferente das ramificações, 
         os marcadores depois de criados não têm mais histórico de commits. 
 
-        * git tag -a 1.0.0 -m "Mensagem que desejar"
-        * git push oringin main --tags 
+        ** git tag -a 1.0.0 -m "Mensagem que desejar"**
+        **git push oringin main --tags** 
 
-    Git Revert
+# Git Revert
         O comando git revert é usado para desfazer alterações ao histórico de commits do repositório. 
         Outros comandos de "desfazer", como o git checkout e o git reset , movem os indicadores de referência 
         do HEAD e do branch para commits especificados.
