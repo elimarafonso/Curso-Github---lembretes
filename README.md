@@ -15,8 +15,11 @@ Udemy
         6. git add "nome do arquivo": adiciona os arquivos para ser adicionado
         7. git commit -am "mensagem" : "-a" para mandar direto e "m" para deixar uma mensgem;
         8. git remote add origin https : //github.com/maurolima92/Sala-de-Estudo.git 
-        9. git branch -M main (apenas a primeira vez)
-        10. git push -u origin "main/master" (utilizar apena um dentro das aspas, precisa verifica qual branch seu bash está utilizando)
+        9. git branch: ver qual branch você está
+        10. git checkout branch_name : mudar de branch
+        11. git checkout -b my_branch: cria a branch e já acessa a branh
+        12. git push --set-upstrem origin my_branch: **enviando a branch para o github**
+        13. git push -u origin "main/master" (utilizar apena um dentro das aspas, precisa verifica qual branch seu bash está utilizando)
 
 # Fez cagada manito? Cuidadooooo com Reset
     **git checkout "nome do arquivo"** : vai retornar o arquivo para antes da alteração e antes do git add "nome do arquivo"
